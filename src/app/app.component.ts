@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FakeApiService} from './fake-api.service';
 
 @Component({
   selector: 'lbz-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'labuz';
+
+  constructor(
+    private fakeApi: FakeApiService
+  ) {}
+
+  getPath() {
+    this.fakeApi.getPath()
+      .subscribe((response) => {
+        console.log('Get Path', response);
+      });
+  }
 }
