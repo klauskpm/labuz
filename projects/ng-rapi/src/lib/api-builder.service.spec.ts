@@ -3,8 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { ApiBuilderService } from './api-builder.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { HttpClient } from '@angular/common/http';
-import {Api} from './api';
-import {NgRapiModule} from './ng-rapi.module';
+import { Api } from './api';
 
 describe('ApiBuilderService', () => {
   let httpClient: HttpClient;
@@ -18,8 +17,10 @@ describe('ApiBuilderService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
-        NgRapiModule,
         HttpClientTestingModule
+      ],
+      providers: [
+        ApiBuilderService
       ]
     });
 

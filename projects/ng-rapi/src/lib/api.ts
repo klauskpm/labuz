@@ -1,5 +1,5 @@
-import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { Observable} from 'rxjs';
 
 export class Api {
   baseUrl: string;

@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
-import {Api} from './api';
-import {HttpClient} from '@angular/common/http';
-import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
+import { Api } from './api';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 describe('Api', () => {
   let httpClient: HttpClient;
