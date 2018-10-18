@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-rapi": [
+        "dist/ng-rapi"
+      ],
+      "ng-rapi/*": [
+        "dist/ng-rapi/*"
+      ]
+    }
   }
 }
