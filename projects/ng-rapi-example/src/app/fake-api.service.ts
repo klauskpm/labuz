@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {ApiBuilderService, Api} from 'ng-rapi';
+import { ApiBuilderService, Api } from 'ng-rapi';
 
 
 @Injectable({
