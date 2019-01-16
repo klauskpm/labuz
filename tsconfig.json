@@ -23,6 +23,12 @@
       ],
       "ng-rapi/*": [
         "dist/ng-rapi/*"
+      ],
+      "ng-environmenter": [
+        "dist/ng-environmenter"
+      ],
+      "ng-environmenter/*": [
+        "dist/ng-environmenter/*"
       ]
     }
   }
