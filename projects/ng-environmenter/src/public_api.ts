@@ -4,3 +4,4 @@
 
 
 export * from './lib/environmenter/environmenter.module';
+export * from './lib/environmenter/environmenter.service';
