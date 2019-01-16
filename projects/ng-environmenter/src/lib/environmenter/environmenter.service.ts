@@ -7,6 +7,23 @@ import {ENVIRONMENTER} from './environmenter.token';
 export class Environmenter {
 
   constructor(
-    @Inject(ENVIRONMENTER) private environmenter: any
+    @Inject(ENVIRONMENTER) private environment: any
   ) { }
+
+  public getGlobalEnvironment(environment?) {
+    return (environment || this.environment).global;
+  }
+
+  public getApplicationEnvironment(environment?) {
+    return (environment || this.environment).application;
+  }
+
+  public getEnvironment(environment?) {
+    const newEnvironment = { ...(environment || this.environment) };
+
+    return {
+      ...newEnvironment.global,
+      ...newEnvironment.application
+    };
+  }
 }
