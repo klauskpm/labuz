@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ENVIRONMENTER } from './environmenter.token';
 
 @NgModule({
   declarations: [],
@@ -7,4 +8,13 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class EnvironmenterModule { }
+export class EnvironmenterModule {
+  static forRoot(environment): ModuleWithProviders {
+    return {
+      ngModule: EnvironmenterModule,
+      providers: [
+        { provide: ENVIRONMENTER, useValue: environment }
+      ]
+    };
+  }
+}
