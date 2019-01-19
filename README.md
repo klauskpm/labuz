@@ -6,3 +6,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### [ng-rapi](/projects/ng-rapi/README.md)
 A REST API library for Angular applications.
+
+### [ng-environmenter](/projects/ng-rapi/README.md)
+Angular environment sharing done easy
