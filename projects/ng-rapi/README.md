@@ -1,2 +1,2 @@
 ## ng-rapi
-A REST API for Angular applications.
+A REST API library for Angular applications.
