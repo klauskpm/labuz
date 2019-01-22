@@ -1,5 +1,5 @@
-import {Inject, Injectable} from '@angular/core';
-import {ENVIRONMENTER} from './environmenter.token';
+import { Inject, Injectable } from '@angular/core';
+import { ENVIRONMENTER } from './environmenter.token';
 
 @Injectable({
   providedIn: 'root'
@@ -10,20 +10,20 @@ export class Environmenter {
     @Inject(ENVIRONMENTER) private environment: any
   ) { }
 
-  public getGlobalEnvironment(environment?) {
-    return (environment || this.environment).global;
+  public getGlobalEnvironment() {
+    return this.environment.global;
   }
 
-  public getApplicationEnvironment(environment?) {
-    return (environment || this.environment).application;
+  public getApplicationEnvironment() {
+    return this.environment.application;
   }
 
-  public getEnvironment(environment?) {
-    const newEnvironment = { ...(environment || this.environment) };
+  public getEnvironment() {
+    const { global, application } = this.environment ;
 
     return {
-      ...newEnvironment.global,
-      ...newEnvironment.application
+      ...global,
+      ...application
     };
   }
 }
