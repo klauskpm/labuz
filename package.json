@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish:ng-rapi": "ng build ng-rapi && cd dist/ng-rapi && npm publish"
+    "publish:ng-rapi": "ng build ng-rapi && cd dist/ng-rapi && npm publish",
+    "publish:ng-environmenter": "ng build ng-environmenter && cd dist/ng-environmenter && npm publish"
   },
   "private": true,
   "dependencies": {
