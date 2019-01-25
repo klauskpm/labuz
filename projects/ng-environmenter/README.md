@@ -6,8 +6,9 @@ Install the package:
 `npm install ng-environmenter`
 
 ### Environment configuration
-Create a environments folder at root level of your workspace, and a environment file for each environment, like the following:
+Create a `environments` folder at root level of your workspace, and a environment file for each environment, like the following:
 ```typescript
+// environments/environment.ts
 export const globalEnvironment = {
   production: false,
 };
@@ -15,7 +16,8 @@ export const globalEnvironment = {
 
 And extend it on yours application environment file:
 ```typescript
-import { globalEnvironment } from '../../../../environment.ts';
+// projects/app/src/environments/environment.ts
+import { globalEnvironment } from '../../../../environments/environment.ts';
 
 export const environment = {
   application: {},
